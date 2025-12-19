@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #222;
+  background: pink;
+}
+
+/* HEADER */
+.main-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px ;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4c5fd7;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #4c5fd7;
+}
+
+/* HERO */
+#hero {
+  background:
+    linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)),
+    url("./images/Screenshot_19-12-2025_18423_www.freepik.com.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}
+
+.hero-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left h1 {
+  font-size: 44px;
+  color: #1f2a44;
+  margin-bottom: 15px;
+}
+
+.hero-left p {
+  color: #2f3b52;
+  max-width: 500px;
+}
+
+.hero-right {
+  background: #4c5fd7;
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.hero-right input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 30px;
+}
+
+.hero-right button {
+  width: 100%;
+  padding: 10px;
+  background: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-right button:hover {
+  background: #ff8c00;
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 15px;
+  width: 85%;
+  margin: auto;
+}
+
+.section.light {
+  background: #f4f6fb;
+  width: 100%;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.center-text {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  color: #555;
+}
+
+/* WHY */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.why-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* CLIENTS */
+.clients-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.client-card {
+  width: 500px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.client-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* NEWSLETTER */
+.center {
+  text-align: center;
+}
+
+#newsletterEmail {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+#subscribeBtn {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: white;
+}
+
+#subscribeBtn:hover {
+  background: #ff8c00;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
